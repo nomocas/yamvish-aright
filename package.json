@@ -1,0 +1,27 @@
+{
+  "name": "yamvish-aright",
+  "version": "0.1.0",
+  "description": "object and values validation with aright rules with yamvish",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomocas/yamvish-aright.git"
+  },
+  "keywords": [
+    "validation",
+    "yamvish",
+    "aright"
+  ],
+  "author": "Gilles Coomans <gilles.coomans@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nomocas/yamvish-aright/issues"
+  },
+  "homepage": "https://github.com/nomocas/yamvish-aright#readme",
+  "dependencies": {
+    "aright": "^0.1.2"
+  }
+}
