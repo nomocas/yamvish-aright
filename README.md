@@ -1,6 +1,6 @@
 # yamvish-aright
 
-[aright](https://github.com/nomocas/aright) object and values validation plugin for [yamvish](https://github.com/nomocas/yamvish).
+[aright](https://github.com/nomocas/aright) validation plugin for [yamvish](https://github.com/nomocas/yamvish).
 
 ## install
 
