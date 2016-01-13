@@ -12,11 +12,11 @@
 		}, true);
 	};
 
-	y.View.prototype.validate = y.Context.prototype.validate = function(path, rule) {
+	y.Context.prototype.validate = function(path, rule) {
 		// subscribe on path then use validator to produce errors (if any) and place it in context.data.$error 
 		var self = this;
 
-		var applyValidation = function(type, path, value, key) {
+		var applyValidation = function(value, type, path, key) {
 			var report;
 			if (type === 'push') // validate whole array ?
 				report = rule.validate(self.get(path));
@@ -31,7 +31,7 @@
 		this.subscribe(path, applyValidation);
 		var val = this.get(path);
 		if (typeof val !== 'undefined')
-			applyValidation('set', path, val);
+			applyValidation(val, 'set');
 		return this;
 	};
 
