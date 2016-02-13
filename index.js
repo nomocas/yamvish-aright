@@ -7,9 +7,9 @@
 	y.aright = aright;
 
 	y.Template.prototype.validate = function(path, rule) {
-		return this.exec(function(context) {
+		return this.context(function(context) {
 			context.validate(path, rule);
-		}, true);
+		});
 	};
 
 	y.Context.prototype.validate = function(path, rule) {
